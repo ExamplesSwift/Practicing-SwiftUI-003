@@ -48,8 +48,10 @@ struct ContentView_Previews : PreviewProvider {
     
     Group {
       ContentView()
+      .environment(\.colorScheme, .dark)
+      ContentView()
         .environment(\.sizeCategory, .accessibilityExtraLarge)
-        .environment(\.colorScheme, .dark)
+        
     }
   }
 }
